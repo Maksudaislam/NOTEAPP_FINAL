@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    tools:context=".Home">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#081B85"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Title Input -->
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Title"
+        android:backgroundTint="#081B85"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Description Input -->
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Description"
+        android:backgroundTint="#081B85"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Item"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#081B85"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click for Capture Image"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F44336"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+</LinearLayout>
